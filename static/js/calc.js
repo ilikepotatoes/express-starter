@@ -26,8 +26,6 @@ $(function() {
       outputText = '2';
     }
     // FIXME
-    $('#output').text('haha');
-  });
 
   $('#three').click(function() {
     var outputText = $('#output').text() + '3';
