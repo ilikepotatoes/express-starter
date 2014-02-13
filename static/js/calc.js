@@ -25,6 +25,9 @@ $(function() {
     if (outputText === '02') {
       outputText = '2';
     }
+
+    $('#outputText').text(outputText);
+  });
     // FIXME
 
   $('#three').click(function() {
