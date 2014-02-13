@@ -25,13 +25,14 @@ $(function() {
     if (outputText === '02') {
       outputText = '2';
     }
-    $('#outputText').text(outputText);
+    $('#output').text(outputText);
   });
-    // FIXME
 
   $('#three').click(function() {
     var outputText = $('#output').text() + '3';
-    // FIXME
+    if (outputText === '03') {
+      outputText = '3';
+    }
     $('#output').text(outputText);
   });
 
