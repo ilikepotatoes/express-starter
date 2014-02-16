@@ -66,23 +66,28 @@ table button:active {
 
 .dance {
   -webkit-animation-name: dance;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 3s;
 }
 
 @-webkit-keyframes dance {
-  0%,50%,100% {
-    -webkit-transform: translateY(0px) rotate(0deg);
+  0% {
+    -webkit-transform: translateY(0px) scale(1.0) rotate(0deg);
     opacity: 1;
+    background-color: yellow;
   }
-  50% {
-    -webkit-transform: translateY(-30px) rotate(-367deg);
+  34% {
+    -webkit-transform: translateY(-30px) scale(1.5) rotate(-367deg);
     opacity: 1;
-    color: green;
-    background-color: orange
+    background-color: orange;
   }
-  50% {
-    -webkit-transform: translateY(-30px) rotate(368deg);
+  66% {
+    -webkit-transform: translateY(0px) scale(1.02) rotate(361deg);
     opacity: 1;
-    color: blue;
+    background-color: red;
+  }
+  100% {
+    background-color: rgba(255, 131, 91, 0.8);
+    opacity: 1;
+    -webkit-transform: translateY(-30px) scale(1.0) rotate(-1deg);
   }
 }
