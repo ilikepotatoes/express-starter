@@ -1,23 +1,28 @@
-alert('Hello and welcome to this page of items!'); // edit me!
+alert('Hello and welcome to this page of items!');
 
-// Problem 1 (Say Hello!) ---------------------------------------------------
 $('#say_hello').click(function() {alert('Hello world!')
 });
 
 
-// Problem 2 (Houdini) ------------------------------------------------------
 $('#disappear').click(function() {
-  //WRITE CODE HERE
+  $('#houdini_text').hide()
 });
 
 $('#reappear').click(function() {
-  //WRITE CODE HERE
+ $('#houdini_text').show()
 });
 
+$('#pink').click(function() {
+ $('#tickled_text').css('color','pink')
+});
 
-// Problem 3 (Tickle Me Pink) -----------------------------------------------
-// WRITE CODE HERE
-
+$('#not_pink').click(function() {
+ $('#tickled_text').css('color','black')
+ alert('Hey, love, it will be alright')
+});
 
 // Problem 4 (Greet Me) -----------------------------------------------------
-// WRITE CODE HERE
+$('#namey').click(function() {
+$('#my_name').val()
+alert('Hello ' + $('#my_name').val())
+});
